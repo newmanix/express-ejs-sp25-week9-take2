@@ -1,10 +1,10 @@
 FROM node:18
 
-# Install Git explicitly
+# Install Git
 RUN apt-get update && apt-get install -y git
 
 # Set working directory
-WORKDIR /workspace
+WORKDIR /app
 
-# Expose port for HTTP server
-EXPOSE 3000 27017 8081
+# Expose port for Node app
+EXPOSE 3000
